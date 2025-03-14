@@ -1,0 +1,88 @@
+.module3 {
+    background-color: $color-lightgreen;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_h4 {
+        font-family: $font-slab;
+        color: $color-grey;
+        font-weight: bold;
+        font-size: 12px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    &_h2{
+        font-family: $font-slab;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    &_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;    
+        &_section {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_img {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                margin-bottom: 5px;
+            }
+            &_h3 {
+                font-family: $font-slab;
+                color: black;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center; 
+            }
+        }
+    }
+    &_button {
+        font-family: $font-main;
+        font-weight: 500;
+        color: white;
+        background-color: $color-green;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 22.5px;
+        padding: 10px 25px 10px 25px;
+        &:hover {
+            transition: all 0.5s ease-out;
+            transform: scale(1.1);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .module3 {
+        &_h2{
+            font-size: 28px;
+        }
+        &_grid {
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;    
+            &_section {
+                &_h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .module3 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}

@@ -1,0 +1,61 @@
+.module2 {
+    padding: 30px 15px 45px 15px;
+    &_h3 {
+        font-family: $font-main;
+        color: $color-green;
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    &_h2 {
+        font-family: $font-slab;
+        color: black;
+        font-weight: bold;
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    &_text {
+        font-family: $font-main;
+        color: $color-grey;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 60px;
+    }
+    &_button {
+        font-family: $font-main;
+        font-weight: 500;
+        color: $color-green;
+        font-size: 20px;
+        text-align: center;
+        border: 2.5px solid $color-green;
+        border-radius: 22.5px;
+        padding: 10px 35px 10px 35px;
+        &:hover {
+            transition: all 0.5s ease-out;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .module2 {
+        padding: 40px 30px 75px 40px;
+        &_h3 {
+            font-size: 16px;
+        }
+        &_h2 {
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+        &_text {
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .module2 {
+        padding: 40px 170px 75px 170px;
+    }
+}

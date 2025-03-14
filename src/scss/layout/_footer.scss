@@ -1,0 +1,106 @@
+.footer {
+    background-color: $color-grey;
+    font-family: $font-main;
+    color: white;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_button {
+        background-color: white;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        animation: move-up 1s ease-in-out;
+        transform: translateY(-19px);
+        display: flex;
+        justify-content: center;
+        &_img {
+            width: 50%;
+        }
+    }
+}
+
+.footercontent {
+    &_listcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_list {
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            .link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    &_info {
+        text-align: center;
+        font-size: 14px;
+        .copy {
+            padding: 20px 0px 15px 0px;
+        }
+        .heart {
+            color: $color-green;
+        }
+    }   
+}
+
+@keyframes move-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-19px);
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &_button {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .footercontent {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 150px;
+        &_listcontainer {
+            flex-direction: row;
+            align-items: normal;
+            gap: 100px;
+            &_list {
+                text-align: left;
+            }
+        }
+        &_info {
+            text-align: left;
+        }   
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footercontent {
+        gap: 300px;
+        &_listcontainer {
+            flex-direction: row;
+            align-items: normal;
+            gap: 250px;
+            &_list {
+                text-align: left;
+            }
+        }
+        &_info {
+            text-align: left;
+        }   
+    }
+}

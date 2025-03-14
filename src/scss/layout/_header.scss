@@ -1,0 +1,17 @@
+.header {
+  background-color: $color-green;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+    top: 0;
+  &_box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_icon {
+      width: 14px;
+      height: 13px;
+    }
+  }
+}
