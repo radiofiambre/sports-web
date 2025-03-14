@@ -1,21 +1,22 @@
 # Sports web
 
-Este es el ejercicio de la evaluación del Módulo 1 del bootcamp de Web Development de la escuela Adalab, promoción nov 2024 - mar 2025.
-Se trata de una página web estática de diseño responsivo.
+This is the assessment exercise for Module 1 of the Adalab School's Web Development Bootcamp, Nov 2024 - Mar 2025.
 
-## Tecnologías utilizadas
+This is a static, responsive website.
 
-* HTML: el proyecto está desarrollador utilizando esta librería y sus características: estructura por componentes, props y liftings, varios hooks, Router y PropTypes.
-   * Flexbox, CSS Grid
-* CSS con Sass: para aplicar el estilo.
-   * Media queries
-   * Animaciones y transiciones
+## Technologies
+
+* HTML
+   * Flexbox
+   * Grid
+* CSS with Sass
+   * Media Queries
+   * Animations and Transitions
 * Vite
 * BEM
-* Estilo y estructura a partir de diseños en Zeplin.
+* Style and structure from Zeplin designs.
 
-
-## Instalación y uso
+## Installation and Use
 ```
 git clone https://github.com/radiofiambre/sports-web.git
 cd sports-web
