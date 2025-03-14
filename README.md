@@ -9,7 +9,7 @@ This is a static, responsive website.
 * HTML
    * Flexbox
    * Grid
-* CSS with Sass
+* Sass
    * Media Queries
    * Animations and Transitions
 * Vite
